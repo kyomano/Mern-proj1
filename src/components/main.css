@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+.searchBar{
+    display: inline-block;
+    position: fixed;
+    width: 700px;
+    height: 26px;
+    margin: 8px;
+    color: white;
+    transform: translate(-50%,0px);
+    background-color: rgba(157,106,158,0.5);
+    border-radius: 5px;
+}
+.mdIcon{
+    display: inline-block;
+    border-width: 0px;
+    outline-width: 0px;
+    width: 26px;
+    height: 26px;
+    margin: 8px;
+    margin-right: 5px;
+}
+
+.avatarIcon{
+    display: inline-block;
+    position: fixed;
+    margin-top: 9px;
+    top: 0px; left: 40px;
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: white 2px solid;
+}
+.helpIcon{
+    display: inline-block;
+    position: fixed;
+    margin-top: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+}
+
+
+.NavBar{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    background-color: #39063a !important;
+}
+
+.rightPanel{
+    top: 44px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 260px;
+}
+
+.leftContent{
+    display: block;
+    padding: 5px 15px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-align: left;
+    background-color: #39063a;
+}
+
+.leftPanel{
+    top: 44px;
+    position: absolute;
+    left: 0px;
+    width: 260px;
+    height: 100%;
+}
+
+.rightContent{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+
+
+.rightNavPanel{
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 150px;
+}
+
+.leftNavContent{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background-color: #39063a;
+}
+
+.leftNavPanel{
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    width: 150px;
+    height: 100%;
+}
+
+.rightNavContent{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #39063a;
+    color: white;
+}
+
+.menuItem
+{
+    border-top: 1px solid rgba(157,106,158,0.8);
+    padding: 10px 13px;
+    color: lightgray;
+}
+
+.collapseItem{
+    width: 100%;
+    height: 24px;
+}
+.collapseItem:hover{
+    background-color: rgb(70, 70, 245);
+}
+.activeItem{
+    background-color: rgba(255,255,255,0.5) !important;
+}
