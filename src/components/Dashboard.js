@@ -3,6 +3,7 @@ import "./main.css";
 import "./layout.css";
 import "./workspace.css";
 import PostItem from './Post/postItem';
+import { FaBeer } from 'react-icons/fa';
 
 function Dashboard (){
 
@@ -14,16 +15,21 @@ function Dashboard (){
         (<PostItem userId="hunter" target="Monster" avatar="2" content="Let it go." timeLog="8:12 pm"></PostItem>),
         (<PostItem userId="Monster" target="Lightning" avatar="4" content="Let's fight." timeLog="6:12 AM"></PostItem>)];
     }
-
+    const menuToggle = () =>{
+        var menu = document.getElementsByClassName("leftPanel")[0];
+        console.log(menu);
+        if(menu == undefined || menu == null) return;
+        if(menu.classList.contains("activeMenu")) menu.classList.remove("activeMenu");
+        else menu.classList.add("activeMenu");
+    }
     const postContent = getPostContents();
-    console.log(postContent);
 
     return (<div>
             <div className="rightPanel">
                 <div className="rightContent">
                     <div className='wPanel w-3-2'> 
                         <div className='p-workspace-header'>
-                            Direct Messages
+                            <span className="menuToggle" onClick={menuToggle.bind(this)}> </span> <span>Direct Messages</span>
                         </div>
                         <div className='p-workspace-section fs-small'>
                             To: &nbsp; @somebody or somebody@example.com
@@ -57,7 +63,7 @@ function Dashboard (){
             </div>
             <div className="leftPanel">
                 <div className='leftContent'>
-                    <div className='menuItem' style={{fontWeight:"bold", color:"white", padding:"10px 15px", fontSize:"18px"}}>DR-Group - <span className='newMessageBtn'> + </span></div>
+                    <div className='menuItem' style={{fontWeight:"bold", color:"white", padding:"10px 15px", fontSize:"18px"}}>DR-Group - <span className='closeMenuBtn'  onClick={menuToggle.bind(this)}> X </span></div>
                     <div className='menuItem'>
                         <div className='collapseItem'> <icon>-</icon> Direct messages</div>
                         <div className='collapseItem'> <icon>-</icon> Mentions & reactions</div>

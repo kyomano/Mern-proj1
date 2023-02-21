@@ -37,10 +37,10 @@ div, span{
 .avatarIcon{
     display: inline-block;
     position: fixed;
-    margin-top: 10px;
+    margin-top: 7px;
     top: 0px; left: 45px;
-    height: 40px;
-    width: 40px;
+    height: 37px;
+    width: 37px;
     background-color: transparent;
 }
 .helpIcon{
@@ -169,22 +169,46 @@ div, span{
     border-radius: 5px;
 }
 
-.newMessageBtn{
+.closeMenuBtn{
     float: right;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     width: 34px;
     height: 34px;
     padding: auto;
+    padding-top:7px;
     text-align: center;
     margin-top: -6px;
     cursor: pointer;
+    display: none;
 }
 
+.menuToggle{
+    display: none;
+    border-left: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.menuToggle:hover{
+    margin-left: 1px;
+}
 
-
+.activeMenu{
+    display: block !important;
+}
 /* Responsive */
-@media only screen and (max-height: 500px) {
-    .w-3-2{ width: 450px; background-color: antiquewhite;}
-    .w-3-1{ width: auto !important; }
+
+@media only screen and (max-width: 1200px) {
+    .w-3-2{ min-width: 500px; }
+    .w-3-1{ width: calc(100% - 500px) !important;  left: 500px !important}
+}
+
+@media only screen and (max-width: 1100px){
+    .closeMenuBtn{display: block;}
+    .menuToggle{ display: inline-block !important;}
+    .rightNavPanel{ left: 120px !important;}
+    .rightPanel{ padding-left: 0px !important;}
+    .leftPanel{display:none; position: fixed;}
+    .w-3-2{ min-width: 700px; }
+    .w-3-1{ min-width: 300px !important; width: calc(100% - 700px) !important;  left: 700px !important}
 }
