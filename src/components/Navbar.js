@@ -5,8 +5,8 @@ function Navbar (){
     return (<div className="NavBar">
             <div className="leftNavPanel">
                 <div className='leftNavContent'>
-                    <span className="avatarIcon"> <img src="./avatar4.png" width={25} height={25}></img> </span>
-                    <span className="helpIcon"> ? </span>
+                    <span className="avatarIcon"> <img src="./avatar4.png" width={35} height={35}></img> </span>
+                    <span className="helpIcon"> hunter </span>
                 </div>
             </div>
             <div className="rightNavPanel">

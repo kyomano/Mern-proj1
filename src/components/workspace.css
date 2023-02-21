@@ -7,7 +7,6 @@
     color: black;
     font-size: 18px;
     font-weight: bold;
-    border-left: solid 1px lightgray;
     border-bottom: solid 1px lightgray;
     display: block;
 }
@@ -23,17 +22,41 @@
     color: black;
     padding: 25px 20px;
     font-size: 15px;
+    
 }
 
 .p-profile-container{
     display: block;
-    padding: 10px 25px;
+    padding: 15px 25px;
     background-color: white;
     color: black;
-    height: calc(100% - 50px);
     width: 100%;
-    border-left: solid 1px lightgray;
+}
+.btn-small,
+.btn-primary{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    width: 45%;
+    border: 1px solid gray !important;
+    padding: 5px 0px;
+    text-align: center;
+}
+.btn-small{
+    width: 10%;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    background-color: #eee;
+    color: black;
+}
 
+.p-profile-container span{
+    font-size: 16px;
+    margin-left: 15px;
 }
 
 .fs-small{

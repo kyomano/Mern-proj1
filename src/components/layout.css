@@ -10,6 +10,20 @@
 
 .h-1-1{
     height: 100%;
+    background-color: white;
+}
+
+.left-grid{
+    border-left: solid 1px lightgray;
+}
+.right-grid{
+    border-right: solid 1px lightgray;
+}
+.top-grid{
+    border-top: solid 1px lightgray;
+}
+.bottom-grid{
+    border-bottom: solid 1px lightgray;
 }
 .wPanel{
     display: inline-block;

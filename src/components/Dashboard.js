@@ -7,12 +7,12 @@ import PostItem from './Post/postItem';
 function Dashboard (){
 
     const getPostContents = ()=>{
-        return [(<PostItem target="Rolex" avatar="2" content="Let it die." timeLog="1:52pm"></PostItem>),
-        (<PostItem target="Rolex" avatar="1" content="Let it die." timeLog="1:52pm"></PostItem>),
-        (<PostItem target="Moony" avatar="3" content="Let's start." timeLog="11:52pm"></PostItem>),
-        (<PostItem target="hunter" avatar="" content="Let's go." timeLog="2:35am"></PostItem>),
-        (<PostItem target="Monster" avatar="2" content="Let it go." timeLog="8:12pm"></PostItem>),
-        (<PostItem target="Lightning" avatar="4" content="Let's fight." timeLog="6:12am"></PostItem>)];
+        return [(<PostItem userId="Monster" target="Rolex" avatar="2" content="Let it die." timeLog="1:52pm"></PostItem>),
+        (<PostItem userId="Rolex" target="Rolex" avatar="1" content="Let it die." timeLog="1:52 pm"></PostItem>),
+        (<PostItem userId="You" target="Moony" avatar="3" content="Let's start." timeLog="11:52 pm"></PostItem>),
+        (<PostItem userId="Lightning" target="hunter" avatar="" content="Let's go." timeLog="2:35 AM"></PostItem>),
+        (<PostItem userId="hunter" target="Monster" avatar="2" content="Let it go." timeLog="8:12 pm"></PostItem>),
+        (<PostItem userId="Monster" target="Lightning" avatar="4" content="Let's fight." timeLog="6:12 AM"></PostItem>)];
     }
 
     const postContent = getPostContents();
@@ -33,13 +33,24 @@ function Dashboard (){
                             {postContent!=undefined? postContent:"No Data"}
                         </div>
                     </div>
-                    <div className="wPanel w-3-1 h-1-1">
+                    <div className="wPanel w-3-1 h-1-1 left-grid">
                         <div className='p-workspace-header'>
                             Profile
                         </div>
                         <div className='p-profile-container'>
-                            <div style={{margin:"45px"}}> <img src="./avatar.png" style={{width:"100%"}}></img> </div>
-                            <h4> Moony</h4>
+                            <div style={{margin:"25px 35px"}}> <img src="./avatar3.png" style={{width:"calc(100% - 15px)", borderRadius:"10px"}}></img> </div>
+                            <h5 style={{marginBottom:"5px"}}> Moony</h5>
+                            <div style={{fontSize:"15px", paddingLeft:"25px"}}> Active, notifications smoozed.  </div>
+                            <div style={{fontSize:"15px", paddingLeft:"25px"}}> 11:52 PM local time </div> 
+                            <div className="direct-row">
+                                <div className='btn-primary' >  Message  </div> 
+                                <div className='btn-primary'>  Huddle </div>
+                                <div className='btn-small'>  &#0020; </div>
+                            </div>
+                        </div>
+                        <div className='p-profile-container top-grid'>
+                            <div style={{marginBottom:"5px", fontSize:"18px", fontWeight:"500"}}> Contact information</div>
+                            
                         </div>
                     </div>
                 </div>
