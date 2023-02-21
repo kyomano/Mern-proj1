@@ -1,11 +1,11 @@
 .w-3-2{
     position: absolute;
-    width: 66%;
+    width: calc(100% - 400px);
 }
 .w-3-1{
     position: absolute;
-    width: 34%;
-    left: 66%;
+    width: 400px;
+    left: calc(100% - 400px);
 }
 
 .h-1-1{
