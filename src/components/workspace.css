@@ -40,13 +40,13 @@
     font-size: 17px;
     font-weight: 500;
     outline: none;
-    width: 45%;
+    width: 40%;
     border: 1px solid gray !important;
     padding: 5px 0px;
     text-align: center;
 }
 .btn-small{
-    width: 10%;
+    width: 20%;
 }
 .btn-primary:hover{
     background-color: transparent;

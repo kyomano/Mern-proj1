@@ -16,7 +16,7 @@ div, span{
     color: white;
     transform: translate(-50%,0px);
     background-color: rgba(157,106,158,0.5);
-    border-bottom-width: 0px;
+    border-width: 0px;
     border-radius: 5px;
 }
 

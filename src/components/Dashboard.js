@@ -4,7 +4,14 @@ import "./layout.css";
 import "./workspace.css";
 import PostItem from './Post/postItem';
 import { FaBeer } from 'react-icons/fa';
-
+import Button from '@mui/material/Button';
+import LoadingButton from '@mui/lab/LoadingButton';
+import SaveAsRounded from '@mui/icons-material/SaveAsRounded';
+import Box from '@mui/material/Box';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+import SaveIcon from '@mui/icons-material/Save';
+import SendIcon from '@mui/icons-material/Send';
 function Dashboard (){
 
     const getPostContents = ()=>{
@@ -53,6 +60,12 @@ function Dashboard (){
                                 <div className='btn-primary'>  Huddle </div>
                                 <div className='btn-small'>  &#0020; </div>
                             </div>
+                            <div className="direct-row">
+                                <Button className='btn-primary' variant="contained" color='secondary' size="medium"> Message </Button>
+                                <Button className='btn-primary' variant="contained" color='secondary' size="medium"> Huddle </Button>
+                                <LoadingButton className='btn-small' loading loadingPosition="center"  variant="outlined"> : </LoadingButton>
+
+                            </div>
                         </div>
                         <div className='p-profile-container top-grid'>
                             <div style={{marginBottom:"5px", fontSize:"18px", fontWeight:"500"}}> Contact information</div>
@@ -73,8 +86,8 @@ function Dashboard (){
                     <div className='menuItem'>
                         <div className='collapseItem'> <icon>-</icon> Channels</div>
                         <div className='collapseItem'> <icon>-</icon> rp-hunt</div>
-                        <div className='collapseItem'> <icon>:</icon> general </div>
-                        <div className='collapseItem'> <icon>:</icon> random </div>
+                        <div className='collapseItem'> <icon>#</icon> general </div>
+                        <div className='collapseItem'> <icon># </icon> random </div>
                         <div className='collapseItem'> <icon>+</icon> dev </div>
                         <div className='collapseItem'> <icon className="activeItem">+</icon> Add channels </div>
                         
