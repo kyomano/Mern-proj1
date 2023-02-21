@@ -1,0 +1,16 @@
+.w-3-2{
+    position: absolute;
+    width: 66%;
+}
+.w-3-1{
+    position: absolute;
+    width: 34%;
+    left: 66%;
+}
+
+.h-1-1{
+    height: 100%;
+}
+.wPanel{
+    display: inline-block;
+}

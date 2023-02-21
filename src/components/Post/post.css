@@ -1,0 +1,17 @@
+.postItem{
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    padding: 10px 10px;
+}
+
+.postIcon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.postContent{
+    display: flex;
+}
