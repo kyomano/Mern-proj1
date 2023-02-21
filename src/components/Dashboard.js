@@ -12,10 +12,17 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import SaveIcon from '@mui/icons-material/Save';
 import SendIcon from '@mui/icons-material/Send';
+import { Snackbar } from '@mui/material';
+import Alert from '@mui/material';
+import Slide from '@mui/material';
 function Dashboard (){
 
+    const newPost = () =>{
+        alert("sdf");
+        return <Slide {...this} direction="up" />;
+    }
     const getPostContents = ()=>{
-        return [(<PostItem userId="Monster" target="Rolex" avatar="2" content="Let it die." timeLog="1:52pm"></PostItem>),
+        return [(<PostItem onClick={newPost.bind(this)} userId="Monster" target="Rolex" avatar="2" content="Let it die." timeLog="1:52pm"></PostItem>),
         (<PostItem userId="Rolex" target="Rolex" avatar="1" content="Let it die." timeLog="1:52 pm"></PostItem>),
         (<PostItem userId="You" target="Moony" avatar="3" content="Let's start." timeLog="11:52 pm"></PostItem>),
         (<PostItem userId="Lightning" target="hunter" avatar="" content="Let's go." timeLog="2:35 AM"></PostItem>),
@@ -101,6 +108,9 @@ function Dashboard (){
                     </div>
                 </div>
             </div>
+            <Snackbar autoHideDuration={6000}> <Alert severity="info"> Let's kill him </Alert> </Snackbar>
+            
     </div>);
 }
 export default Dashboard;
+
