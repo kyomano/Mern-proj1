@@ -110,6 +110,18 @@
   display: block;
   z-index: 1000;
 }
+.mobilenavbar{
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  text-align: right;
+  display: none;
+  z-index: 1000;
+}
+.mobilenavbar img{
+  margin-right: 50px;
+  margin-top: 70px;
+}
 
 .btn-small{
   width: 30px;
@@ -308,7 +320,8 @@ div, img{
   backdrop-filter: blur(2px);
   background: rgba(47, 50, 65, 0.5);
 }
-.mobileWallet{
+.mobileWallet,
+.mobileBack{
   display: none;
 }
 
@@ -345,4 +358,7 @@ div, img{
   .wTemplate{ width: 95% !important; margin: 0 !important;}
   .mobilePayment{display: block;}
   .appPayment{display: none;}
+  .mobilenavbar{display: block;}
+  .appBack{display: none;}
+  .mobileBack{display: block;}
 }

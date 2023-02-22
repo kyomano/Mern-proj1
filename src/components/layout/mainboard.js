@@ -30,7 +30,9 @@ const MainBoard = () => {
     }
     return (
         <div className='MainBoard'>
-            <img src='./images/mainboard/bk/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
+            <img className="appBack" src='./images/mainboard/bk/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
+            <img className="mobileBack"  src='./images/mainboard/mobile/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
+            
             <img className="monkeyPic" src='./images/mainboard/monkey.png' style={{position: "absolute", left:"calc(70% - 851px)", top:"40px", width:"851" ,height: "851"}}></img>
             <div className="content-advertising">
                 <div className="createWallet">
@@ -177,20 +179,26 @@ const MainBoard = () => {
             <div className='cryptoItem' style={{ display:"flex", color:"white",flexDirection:"column", alignItems:"center"}}> 
                     <div className='cryptoIcon' style={{display:"flex",width:"250px", alignItems:"center", justifyContent:"center",borderRadius:"5px", boxShadow:"0px 0px 10px rgb(50,200,50)", backgroundColor:"rgba(255,255,255,0.1)", width:"110px", height:"110px"}}>
                     <img src="./images/mainboard/logo/Icon (2).png" style={{width:"50px", height:"50px"}}></img> </div>
-                    <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Clarity </h4>
-                    <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> We help you make sense of the coins, the terms, the dense charts and market changes. </h7>
+                    <div className="flex-column align-center">
+                        <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Clarity </h4>
+                        <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> We help you make sense of the coins, the terms, the dense charts and market changes. </h7>
+                    </div>
                  </div>
                  <div className='cryptoItem' style={{ display:"flex", color:"white",flexDirection:"column", alignItems:"center"}}> 
                     <div className='cryptoIcon' style={{display:"flex",width:"250px", alignItems:"center", justifyContent:"center",borderRadius:"5px", boxShadow:"0px 0px 10px rgb(50,200,50)", backgroundColor:"rgba(255,255,255,0.1)", width:"110px", height:"110px"}}>
                     <img src="./images/mainboard/logo/Icon (1).png" style={{width:"50px", height:"50px"}}></img> </div>
-                    <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Confidence </h4>
-                    <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> Our markets are always up to date, sparking curiosity with real-world relevance. </h7>
+                    <div className="flex-column align-center">
+                        <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Confidence </h4>
+                        <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> Our markets are always up to date, sparking curiosity with real-world relevance. </h7>
+                    </div>
                  </div>
                  <div className='cryptoItem' style={{ display:"flex", color:"white",flexDirection:"column", alignItems:"center"}}> 
                     <div className='cryptoIcon' style={{display:"flex",width:"250px", alignItems:"center", justifyContent:"center",borderRadius:"5px", boxShadow:"0px 0px 10px rgb(50,200,50)", backgroundColor:"rgba(255,255,255,0.1)", width:"110px", height:"110px"}}>
                     <img src="./images/mainboard/logo/Icon.png" style={{width:"50px", height:"50px"}}></img> </div>
-                    <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Community </h4>
-                    <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> We support the crypto community, putting data in the hands which need it most. </h7>
+                    <div className="flex-column align-center">
+                        <h4 className="cryptoHeader" style={{fontSize:"25px", width:"250px"}}> Community </h4>
+                        <h7 className="cryptoInform" style={{fontSize:"17px",padding:"20px 10px", textAlign:"center"}}> We support the crypto community, putting data in the hands which need it most. </h7>
+                    </div>
                  </div>
             </div>
 
