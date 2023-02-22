@@ -297,7 +297,9 @@
   width: 50px;
   height: 50px;
 }
-
+.mobilePayment{
+  display: none;
+}
 div, img{
   z-index: 99;
 }
@@ -305,6 +307,9 @@ div, img{
   width: 325px;
   backdrop-filter: blur(2px);
   background: rgba(47, 50, 65, 0.5);
+}
+.mobileWallet{
+  display: none;
 }
 
 @media screen and (max-width: 1400px){
@@ -319,7 +324,8 @@ div, img{
   .viewWMS { display: none; float:left}
   .navbar{display: none;}
   
-
+  .mobileWallet{display: inline-block;}
+  .createWallet{display: none;}
   .content-advertising{ padding-left: 0px; text-align: center;}
   .createWallet { width: 95% !important; text-align: center;}
 
@@ -337,4 +343,6 @@ div, img{
   .cryptoHeader{ font-size: 20px !important;} 
   .cryptoItem{ width: 95% !important; height: 350px !important; flex-direction: row !important;}
   .wTemplate{ width: 95% !important; margin: 0 !important;}
+  .mobilePayment{display: block;}
+  .appPayment{display: none;}
 }

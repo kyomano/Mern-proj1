@@ -48,7 +48,17 @@ const MainBoard = () => {
                             <div className="alCenter ft-bold" style={{fontSize:"25px", width:"246px", height:"68px", borderRadius:"34px", backgroundColor:"#CAFC01", color:"black"}}> Socialize</div> </div> 
                     </div>
                 </div>
-
+                <div className="mobileWallet">
+                    <div className="c-w-info" style={{top:"41px",marginBottom:"30px"}}> A trusted and secure cryptocurrency exchange. </div>
+                    <div style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"center"}}>
+                        <div className="w-info flexAlign-center">Your guide to the world of an open financial system. Get started with the easiest and most secure platform to buy and trade cryptocurrency.</div>
+                    </div>
+                    <div style={{marginTop:"70px", display:"flex"}}>
+                        <div style={{width:"98%", height:"100%"}}> 
+                            <div className='alCenter ft-bold' style={{fontSize:"25px", width:"98%", height:"68px", borderRadius:"34px", background: "linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%)", color:"black"}}> Get Started Now</div> </div> 
+                        
+                    </div>
+                </div>
                 
                 <div className="viewWMS">
                     <div style={{position:"absolute"}}> 
@@ -141,7 +151,9 @@ const MainBoard = () => {
                  </div>
             </div>
             <div style={{display:"flex", margin:"0 0", width:"100%", justifyContent:"center"}}>
-                <div style={{backgroundImage:"url('./images/mainboard/buy/illustration.png')",width:"400px", transform:"translate(-130px,0)"}}><img src="./images/mainboard/buy/card.png" style={{paddingLeft:"130px"}}></img></div>
+                
+                <div className="mobilePayment" style={{backgroundImage:"url('./images/mainboard/mobile/Illustration.png')",width:"300px", transform:"translate(-100px,0)"}}><img src="./images/mainboard/mobile/Card.png" style={{paddingLeft:"100px"}}></img></div>
+                <div className="appPayment" style={{backgroundImage:"url('./images/mainboard/buy/illustration.png')",width:"400px", transform:"translate(-130px,0)"}}><img src="./images/mainboard/buy/card.png" style={{paddingLeft:"130px"}}></img></div>
             </div>
             <div className='panel-header flexAlign-center flex-column'>
                 <div className="wTemplate"  style={{fontSize:"18px", fontWeight:"400", margin:"5px 700px", lineHeight:"40px", textAlign:"center", color:"white"}}>
