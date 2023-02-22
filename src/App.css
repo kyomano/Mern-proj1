@@ -3,49 +3,61 @@
   background-color: #141518;
   padding: 0 0;
   margin:  0 0;
+  width: 103%;
+  
 }
 .App{
-  min-width: 1200px;
 }
 
 .MainBoard *{
+  word-spacing: 5px;
   font-family: "Manrope";
-  font-weight: bold;
   line-height: 26px;
   background-size: cover;
 }
 
-.content-Wallet{
+.content-advertising{
   position: relative;
-  padding-top: 250px;
-  padding-right: 200px;
-  padding-left: 150px;
+  padding-top: 234px;
+  padding-left: 11%;
   display: block;
   height: auto;
 }
 .createWallet{
   position: relative;
   display: inline-block;
-  width: 600px;
-  height: 550px;
+  width: 679px;
+  height: 453px;
   padding: 0 0;
   margin: 0 0;
 }
 .viewWMS{
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 576px;
   height: 380px;
   float: right;
 }
 
+.secureBoard{
+  width: 259px; 
+  height: 416px; 
+  background-color: #2A2B31; 
+  border-radius: 34px;
+  display: block;
+  color: white;
+  padding: 41px;
+  margin: 0px;
+  
+}
 .myWallet{
-  padding: 25px;
+  padding: 34px;
   display: flex;
   position: relative;
   width: 250px;
-  height: 230px;
-  margin-left: 100px;
+  height: 182px;
+  margin-left: 80px;
+  margin-top: -150px;
   border-radius: 45px;
   color: white;
   background: linear-gradient(132.45deg, rgba(126, 126, 126, 0.4) 3.01%, rgba(126, 126, 126, 0) 107.67%);
@@ -54,27 +66,19 @@
 
 .marcketItem{
   width: 100%;
-  height: 70px;
+  height: 80px;
+  margin-top: 10px;
 }
 .bd-bottom{
   border-bottom: 1px solid gray;
 }
 
 
-.secureBoard{
-  width: 283px; 
-  height: 386px; 
-  background-color: #2A2B31; 
-  border-radius: 50px;
-  display: block;
-  color: white;
-  padding: 20px;
-  
-}
 .c-w-info{
   font-family: "Manrope";
   font-weight: bold;
-  font-size: 65px;
+  font-size: 72px;
+  font-style: normal;
   line-height: 81px;
   color: white;
 }
@@ -88,20 +92,21 @@
 }
 .w-info{
   left:25px;
-  width:'587px';
   text-align: left;
   height: 140px;
+  font-style: normal;
   line-height: 35px;
+  font-weight: 400;
   color:#F5F2EA;
   opacity: 60%;
-  font-size: 23px;
+  font-size: 28px;
+  padding-right: 80px;
 }
 
 .navbar{
-  position: fixed;
+  position: absolute;
   height: 160px;
-  background-color: #141518;;
-  width: 100%;
+  width: 104%;
   display: block;
   z-index: 1000;
 }
@@ -110,13 +115,14 @@
   width: 30px;
   height: 40px !important;
 }
+
 .panel-header{
   display: block;
   position:relative;
   width: 100%;
-  height: 300px;
+  height: auto;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
 }
 .panelTitle{
   font-size: 25px;
@@ -124,12 +130,16 @@
 }
 
 .panelContainer{
-  background-image: url('../public/images/mainboard/CardBg.png');
-  width: 285px; 
-  height: 329px;
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 12px;
+  width: 285px;
+  height: 304px;
+  min-width: 285px; 
+  min-height: 304px;
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 25px;
   color: white;
   align-items: center; 
 }
@@ -151,8 +161,8 @@
 }
 
 .wLogo{
-  left: 10%;
-  top:37px;
+  left: 10.15%;
+  top: 37px;
   width: 383px;
   height: 109px;
 }
@@ -208,7 +218,7 @@
 }
 
 .w-2-1{
-  width: 60%;
+  width: 55%;
 }
 .w-3-1{
   width:33.3%;
@@ -293,34 +303,37 @@ div, img{
 }
 .coinItem{
   width: 325px;
+  backdrop-filter: blur(2px);
+  background: rgba(47, 50, 65, 0.5);
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1400px){
     .viewWMS { display: none; float:left}
     .coinItem{width: 40% !important;}
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1180px){
   
-  .MainBoard{text-align: left; padding: 0px 35px; width: 700px !important;}
+  .MainBoard{text-align: left; padding: 0px 35px; width: 95% !important;}
   .viewWMS { display: none; float:left}
   .navbar{display: none;}
-  .wTemplate{ width: 780px !important; margin: 0 !important;}
+  
 
-  .content-Wallet{ padding-left: 0px; text-align: center;}
-  .createWallet { width: 100% !important; text-align: center;}
+  .content-advertising{ padding-left: 0px; text-align: center;}
+  .createWallet { width: 95% !important; text-align: center;}
 
 
-  .storebtn, .googlebtn{width: 100%;}
-  .panel-header{width: 100% !important;}
-  .panelContainer{width: 100% !important; margin:0 !important; margin-top: 15px !important; border-radius: 0px !important; padding: 15px 200px !important;}
+  .storebtn, .googlebtn{width: 95%;}
+  .panel-header{width: 95% !important;}
+  .panelContainer{width: 95% !important; margin:0 !important; margin-top: 15px !important; border-radius: 0px !important; padding: 15px 200px !important;}
   .panel-Change{flex-direction: column;}
 
   .coinBoard{justify-content:start !important;}
-  .coinItem{width: 100% !important; margin-top: 5px;}
+  .coinItem{width: 95% !important; margin-top: 5px;}
 
   .cryptoIcon{ width: 150px !important; height:150px !important; margin-left: 5px;}
   .cryptoInform{ font-size: 25px !important; line-height: 70px;}
   .cryptoHeader{ font-size: 20px !important;} 
-  .cryptoItem{ width: 100% !important; height: 350px !important; flex-direction: row !important;}
+  .cryptoItem{ width: 95% !important; height: 350px !important; flex-direction: row !important;}
+  .wTemplate{ width: 95% !important; margin: 0 !important;}
 }
