@@ -1,38 +1,326 @@
-.App {
+.MainBoard{
+  display: block;
+  background-color: #141518;
+  padding: 0 0;
+  margin:  0 0;
+}
+.App{
+  min-width: 1200px;
+}
+
+.MainBoard *{
+  font-family: "Manrope";
+  font-weight: bold;
+  line-height: 26px;
+  background-size: cover;
+}
+
+.content-Wallet{
+  position: relative;
+  padding-top: 250px;
+  padding-right: 200px;
+  padding-left: 150px;
+  display: block;
+  height: auto;
+}
+.createWallet{
+  position: relative;
+  display: inline-block;
+  width: 600px;
+  height: 550px;
+  padding: 0 0;
+  margin: 0 0;
+}
+.viewWMS{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 380px;
+  float: right;
+}
+
+.myWallet{
+  padding: 25px;
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 230px;
+  margin-left: 100px;
+  border-radius: 45px;
+  color: white;
+  background: linear-gradient(132.45deg, rgba(126, 126, 126, 0.4) 3.01%, rgba(126, 126, 126, 0) 107.67%);
+  backdrop-filter: blur(4.5px);
+}
+
+.marcketItem{
+  width: 100%;
+  height: 70px;
+}
+.bd-bottom{
+  border-bottom: 1px solid gray;
+}
+
+
+.secureBoard{
+  width: 283px; 
+  height: 386px; 
+  background-color: #2A2B31; 
+  border-radius: 50px;
+  display: block;
+  color: white;
+  padding: 20px;
+  
+}
+.c-w-info{
+  font-family: "Manrope";
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 81px;
+  color: white;
+}
+.alCenter{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.ft-bold{
+  font-weight: bold;
+}
+.w-info{
+  left:25px;
+  width:'587px';
+  text-align: left;
+  height: 140px;
+  line-height: 35px;
+  color:#F5F2EA;
+  opacity: 60%;
+  font-size: 23px;
+}
+
+.navbar{
+  position: fixed;
+  height: 160px;
+  background-color: #141518;;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+
+.btn-small{
+  width: 30px;
+  height: 40px !important;
+}
+.panel-header{
+  display: block;
+  position:relative;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.panelTitle{
+  font-size: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.panelContainer{
+  background-image: url('../public/images/mainboard/CardBg.png');
+  width: 285px; 
+  height: 329px;
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
+  color: white;
+  align-items: center; 
+}
+.panelHeader{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  background-color: rgba(255,255,255,0.1);
+
+}
+.pLogo{
+  left: 10%;
+  top: 37px;
+  width: 116px;
+  height: 109px;
+}
+
+.wLogo{
+  left: 10%;
+  top:37px;
+  width: 383px;
+  height: 109px;
+}
+
+.navbar *{
+  position: absolute;
+  display: block;
+  font-size: 16px ;
+  line-height: 24px;
+}
+
+.navbar a{
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.fc-white{
+  color:white;
+}
+.ft-bold{
+  font-size: 18px;
+  font-weight:bold;
+}
+.signInBtn{
+  border-radius: 49px;
+  padding-top:31px;
+  width: 172px;
+  
+  height: 55px;
+  background-color: #CAFC01;
+  text-align: center;
+  color: #0c0c0c;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap{
+  display:flex;
+  flex-wrap: wrap;
+}
+.startingBtn{
+
+}
+
+.w-2-1{
+  width: 60%;
+}
+.w-3-1{
+  width:33.3%;
+  height: 180px;
+  padding: 5px 10px;
+}
+.pt-3{
+  padding-top: 15px;
+}
+.mb-5{
+  margin-bottom: 15px;
+}
+.plr-3{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-outlined{
+  width: 230px;
+  height:80px;
+  border: 1px white solid;
+  color: white;
+}
+.btn-rounded{
+  border-radius: 40px;
+  border: 1px gray solid;
+}
+
+.contentCol{
+  margin-left: 18px;
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+}
+.align-center{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.font-crypto{
+  background: linear-gradient(180deg, #CAFC01 44.79%, #327919 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.align-left{
+  text-align: left;
+  justify-content: left;
+}
+.wTemplate{
+  width: 1200px;
+}
+.flexAlign-center{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.btn-large{
+  width: 600px;
+}
+.btnc-green{
+  background: linear-gradient(265.56deg, #CAFC01 -0.27%, #CAFC01 33.71%, #34A948 98.59%);
+  color: black;
+}
+
+.cryptoItem{
+  width: 285px; 
+  height: 329px;
+}
+.cryptoIcon{
+  width: 50px;
+  height: 50px;
+}
+
+div, img{
+  z-index: 99;
+}
+.coinItem{
+  width: 325px;
+}
+
+@media screen and (max-width: 1280px){
+    .viewWMS { display: none; float:left}
+    .coinItem{width: 40% !important;}
+}
+
+@media screen and (max-width: 780px){
+  
+  .MainBoard{text-align: left; padding: 0px 35px; width: 700px !important;}
+  .viewWMS { display: none; float:left}
+  .navbar{display: none;}
+  .wTemplate{ width: 780px !important; margin: 0 !important;}
+
+  .content-Wallet{ padding-left: 0px; text-align: center;}
+  .createWallet { width: 100% !important; text-align: center;}
+
+
+  .storebtn, .googlebtn{width: 100%;}
+  .panel-header{width: 100% !important;}
+  .panelContainer{width: 100% !important; margin:0 !important; margin-top: 15px !important; border-radius: 0px !important; padding: 15px 200px !important;}
+  .panel-Change{flex-direction: column;}
+
+  .coinBoard{justify-content:start !important;}
+  .coinItem{width: 100% !important; margin-top: 5px;}
+
+  .cryptoIcon{ width: 150px !important; height:150px !important; margin-left: 5px;}
+  .cryptoInform{ font-size: 25px !important; line-height: 70px;}
+  .cryptoHeader{ font-size: 20px !important;} 
+  .cryptoItem{ width: 100% !important; height: 350px !important; flex-direction: row !important;}
 }
