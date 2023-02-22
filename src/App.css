@@ -310,6 +310,7 @@ div, img{
 @media screen and (max-width: 1400px){
     .viewWMS { display: none; float:left}
     .coinItem{width: 40% !important;}
+    .monkeyPic{ display: none;}
 }
 
 @media screen and (max-width: 1180px){

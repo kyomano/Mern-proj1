@@ -31,7 +31,7 @@ const MainBoard = () => {
     return (
         <div className='MainBoard'>
             <img src='./images/mainboard/bk/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
-            <img src='./images/mainboard/monkey.png' style={{position: "absolute", left:"calc(70% - 851px)", top:"40px", width:"851" ,height: "851"}}></img>
+            <img className="monkeyPic" src='./images/mainboard/monkey.png' style={{position: "absolute", left:"calc(70% - 851px)", top:"40px", width:"851" ,height: "851"}}></img>
             <div className="content-advertising">
                 <div className="createWallet">
                     <div style={{color:"#CAFC01",marginBottom:"10px"}}> TRADE, SOCIALIZE AND FARN CRYPTO </div>
