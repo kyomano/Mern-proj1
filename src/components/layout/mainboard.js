@@ -28,8 +28,11 @@ const MainBoard = () => {
             </div>
      );
     }
-    return (
-        <div className='MainBoard'>
+    const onclicked = () => {
+        document.getElementsByClassName("mobileMenu")[0].style.display = "none";
+    }
+        return (
+        <div className='MainBoard' onClick={onclicked}>
             <img className="appBack" src='./images/mainboard/bk/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
             <img className="mobileBack"  src='./images/mainboard/mobile/BGPattern.png' style={{position: "absolute", left:"0px", top:"0px", width:"100%" ,height: "6100px"}}></img>
             
